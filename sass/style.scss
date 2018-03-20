@@ -1,0 +1,63 @@
+@import "_mixin.scss";
+@import "_mobile.scss";
+@import "_tablet.scss";
+@import "_desktop.scss";
+
+html,body {
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+}
+
+body{
+	
+	background-image: url(../images/dc-background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+header img {
+	margin-left: 40px;
+    margin-top: 10px;
+    position: fixed;
+    width:90px;
+ 
+}
+
+footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 0.5rem;
+	background-color: #303030;
+	text-align: center;
+	color:white;
+
+}
+
+
+
+//mobile screen
+@media screen and (max-width: 768px) {
+
+	@import "_mobile.scss";
+
+
+
+}
+
+//tablet screen
+@media screen and (max-width: 1028px) {
+	@import "_tablet.scss";
+
+}
+
+
+//desktop screen
+@media screen and (min-width: 1028px) {
+	@import "_desktop.scss";
+
+}
+
+

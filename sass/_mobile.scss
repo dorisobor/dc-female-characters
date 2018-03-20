@@ -1,0 +1,14 @@
+body {
+	.sticky-image-wrapper{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .sticky-image-wrapper img{
+        display: table;
+        position: relative;
+        margin: auto;
+   }
+
+}
