@@ -1,3 +1,33 @@
-body {
-	
+#content-wrapper {
+	top: 30px;
+	position: relative;
+	height: 550px;
+
+}
+
+
+.characterInfo,
+h1 {
+
+	margin-left: 50px;
+}
+
+
+
+.characterInfo {
+	margin-top: -300px;
+	right: -400px;
+	position: relative;
+	height: auto;
+	line-height: 25px;
+	text-align: left;
+	padding: 4px;
+	width: 200px;
+}
+
+
+h1 {
+	margin-left: 100px;
+
+
 }

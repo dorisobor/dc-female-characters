@@ -1,1 +1,9 @@
+//colours
 $bcolor: #4d6081;
+
+// padding
+@mixin padding {
+
+	margin: 0px;
+	padding: 0px;
+}

@@ -1,14 +1,37 @@
-body {
-	.sticky-image-wrapper{
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
+#content-wrapper {
+	top: 60px;
+	position: relative;
+	height: 500px;
 
-    .sticky-image-wrapper img{
-        display: table;
-        position: relative;
-        margin: auto;
-   }
+}
 
+.characterInfo,
+h1 {
+	margin-left: 10px;
+}
+
+h1 {
+
+	text-align: center;
+}
+
+.profileImage {
+	top: 50px;
+	height: 300px;
+	width: 200px;
+	display: block;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header img {
+	margin: 0 auto;
+}
+
+.characterInfo {
+	margin-top: -5px;
+	right: 5px;
+	position: relative;
+	min-width: 190px;
 }

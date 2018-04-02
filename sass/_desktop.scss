@@ -1,87 +1,38 @@
 #content-wrapper {
-	width: 800px;
-    height: 600px;
-    position: fixed;
-    left: calc(50% - 400px);
-    top: calc(50% - 300px);
-    display: block;
-    z-index: 9999999;
-    background-color: #fff;
-	border: 0.5px solid black;
- main {
-	 background-color: transparent 0.5;
-	 
-	 .boxShadow {
-		width: 220px;
-		height: 320px;
-		margin-left: 70px;
-		margin-top: 100px;
-		position: fixed;
-		background-color: #111;
-	}
-    // character's profile pic
-
-	 .profileImage{
-		margin-right: 40px;
-		margin-top: 120px;
-		position: fixed;
-		width: 220px;
-		height: 320px;
-		z-index: 9999;
-	 }
-
-	 .characterInfo{
-    	width: 420px;
-		margin-top: 100px;
-		margin-left: 340px;
-		z-index: 99999999999;
-		position: absolute;
-		height: auto;
-		letter-spacing: 1px;
-		line-height: 25px;
-		text-align: left;
-		padding: 4px;
-		color: #000;
-
-	 }
-	 // character describtion
-	 .desc {
-		width: 420px;
-		margin-top: 330px;
-		margin-left: 340px;
-		z-index: 99999999999;
-		position: absolute;
-		height: auto;
-		letter-spacing: 1px;
-		line-height: 25px;
-		text-align: left;
-		padding: 4px;
-		color: #000;
- }
-  
-}
+	height: 600px;
+	top: 40px;
+	position: relative;
 }
 
-.profileImage,.boxShadow {
-	position:relative;
-	top:120px;
+main {
+	margin: 10px; 
 	
+	// character's profile pic
+	.profileImage {
+
+		margin-left: 100px;
+		position: relative;
 	}
 
-// character's name headline
+}
+
+.characterInfo {
+
+	margin-top: -350px;
+	width: 300px;
+}
+
+
 h1 {
-	margin-left: 340px;
-    margin-top: 40px;
-    position: fixed;
-    // font: bold 3em 'Montserrat';
-    border-bottom: 3.3px solid #0078F0;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    line-height: 60px;
-    text-align: left;
-    z-index: 99999;
-    width: 419px;
-	
+	margin-left: 100px;
+
 }
 
+.search {
+	margin-bottom: 100px;
+}
 
+#content {
+	top: -70px;
+	position: relative;
+}
