@@ -1,5 +1,5 @@
 const randomizeButton = document
-	.getElementById("randomizeButton");
+    .getElementById("randomizeButton");
 
 // a variable for the unique api key
 const my_api = "edd5e498e427ba68da36f8b1693b15fbedde69fa";
@@ -12,37 +12,37 @@ fetchSuperheroes();
 // function to fetch the json info
 function fetchSuperheroes() {
 
-	fetch(`https://api-comic-vine.herokuapp.com/characters/?api_key=${my_api}&filter=gender:female&publishers%5B0%5D=4010-10&limit=20&format=json`)
-		.then((response) => response.json())
-		.then((superheroData) => {
-			displayRandomSuperhero(superheroData)
-			//globalSuperheroData = superheroData;
-		})
-		.catch((error) => {
-			console.log(error);
-		})
+    fetch(`https://api-comic-vine.herokuapp.com/characters/?api_key=${my_api}&filter=gender:female&publishers%5B0%5D=4010-10&limit=20&format=json`)
+        .then((response) => response.json())
+        .then((superheroData) => {
+            displayRandomSuperhero(superheroData)
+            //globalSuperheroData = superheroData;
+        })
+        .catch((error) => {
+            console.log(error);
+        })
 }
 
 // function to fetch the json info
 function displayRandomSuperhero(superheroData) {
-	const results = superheroData.results;
-	const content = document.getElementById("content");
+    const results = superheroData.results;
+    const content = document.getElementById("content");
 
 
-	//creates a function to the button so you can randomize 
-	randomizeButton.addEventListener("click", function (superheroData) {
+    //creates a function to the button so you can randomize 
+    randomizeButton.addEventListener("click", function(superheroData) {
 
-	//for loop to randomize an object 
+        //for loop to randomize an object 
 
-		var out = "";
-		var i;
-		for (i = 0; i < Math.floor(Math.random() * results.length); i++) {
+        var out = "";
+        var i;
+        for (i = 0; i < Math.floor(Math.random() * results.length); i++) {
 
-		}
+        }
 
 
-		//  print out the character
-		const superheroInfo = ` 
+        //  print out the character
+        const superheroInfo = ` 
     <h1> ${results[i].name}</h1>
     <div class ="boxShadow"></div>
     <img class ="profileImage" src="${results[i].image.small_url}"> 
@@ -59,14 +59,9 @@ function displayRandomSuperhero(superheroData) {
     <p> <b>About: </b> ${results[i].deck} </p><div>
     </div>
     `;
-		content.innerHTML = superheroInfo;
+        content.innerHTML = superheroInfo;
 
 
-	});
+    });
 
 }
-
-
-
-
-
