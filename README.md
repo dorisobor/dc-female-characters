@@ -14,7 +14,7 @@ I have built a simple page where you can randomize different DC characters bios 
 
 ## Resources
 
-All the information is taken from [Comic Vine](https://comicvine.gamespot.com/api/) where I have obtain their API to gain access to their data. 
+All the information is taken from [Comic Vine](https://comicvine.gamespot.com/api/) where I have obtained their API to gain access to their data. 
 
 
 
